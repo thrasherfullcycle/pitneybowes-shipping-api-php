@@ -18,6 +18,20 @@
 # Description: unit test for address verification
 # 
 
+// Just blanket add instead of picking and choosing..
+
+use PitenyBowes\PBShippingApi\PBShipping;
+use PitenyBowes\PBShippingApi\PBShippingAuthentication;
+use PitenyBowes\PBShippingApi\PBShippingCarrier;
+use PitenyBowes\PBShippingApi\PBShippingDeveloper;
+use PitenyBowes\PBShippingApi\PBShippingAccount;
+use PitenyBowes\PBShippingApi\PBShippingAddress;
+use PitenyBowes\PBShippingApi\PBShippingShipment;
+use PitenyBowes\PBShippingApi\PBShippingTracking;
+use PitenyBowes\PBShippingApi\PBShippingApiError;
+use PitenyBowes\PBShippingApi\PBShippingManifest;
+
+
 require_once('TestUtil.php');
 
 class AddressTest extends PHPUnit_Framework_TestCase {
