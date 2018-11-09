@@ -1,0 +1,11 @@
+{
+    "name": "pitneybowes/pitneybowes-shipping-api-php",
+    "type": "library",
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "PitenyBowes\\PBShippingApi\\": "lib/pbshipping/"
+        }
+    }
+
+}
