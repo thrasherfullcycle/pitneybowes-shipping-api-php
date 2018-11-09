@@ -19,24 +19,23 @@
 #              api
 # 
 
-require(dirname(__FILE__) . '/pbshipping/pbshipping.php');
+require(dirname(__FILE__) . '/pbshipping/PBShipping.php');
+require(dirname(__FILE__) . '/pbshipping/PBShippingApiError.php');
+require(dirname(__FILE__) . '/pbshipping/PBShippingAuthenticationError.php');
+require(dirname(__FILE__) . '/pbshipping/PBShippingMissingAttributeError.php');
+require(dirname(__FILE__) . '/pbshipping/PBShippingApiObject.php');
+require(dirname(__FILE__) . '/pbshipping/PBShippingApiResource.php');
 
-require(dirname(__FILE__) . '/pbshipping/error.php');
-require(dirname(__FILE__) . '/pbshipping/authentication.php');
-require(dirname(__FILE__) . '/pbshipping/requestor.php');
+require(dirname(__FILE__) . '/pbshipping/PBShippingAuthentication.php');
+require(dirname(__FILE__) . '/pbshipping/PBShippingRequestor.php');
 
-require(dirname(__FILE__) . '/pbshipping/api_object.php');
-require(dirname(__FILE__) . '/pbshipping/api_resource.php');
-
-require(dirname(__FILE__) . '/pbshipping/account.php');
-require(dirname(__FILE__) . '/pbshipping/address.php');
-require(dirname(__FILE__) . '/pbshipping/carrier.php');
-require(dirname(__FILE__) . '/pbshipping/developer.php');
-require(dirname(__FILE__) . '/pbshipping/manifest.php');
-require(dirname(__FILE__) . '/pbshipping/shipment.php');
-require(dirname(__FILE__) . '/pbshipping/tracking.php');
-
-
+require(dirname(__FILE__) . '/pbshipping/PBShippingAccount.php');
+require(dirname(__FILE__) . '/pbshipping/PBShippingAddress.php');
+require(dirname(__FILE__) . '/pbshipping/PBShippingCarrier.php');
+require(dirname(__FILE__) . '/pbshipping/PBShippingDeveloper.php');
+require(dirname(__FILE__) . '/pbshipping/PBShippingManifest.php');
+require(dirname(__FILE__) . '/pbshipping/PBShippingShipment.php');
+require(dirname(__FILE__) . '/pbshipping/PBShippingTracking.php');
 
 
 
