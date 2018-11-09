@@ -18,6 +18,47 @@ For more informaton please visit the
  
 You can clone or download the source from Github repository (https://github.com/pitneybowes/pitneybowes-shipping-api-php).
 
+## Composer Install
+Add the following to your composer.json file.
+
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/thrasherfullcycle/pitneybowes-shipping-api-php"
+        },
+
+    "require": {
+        "pitneybowes/pitneybowes-shipping-api-php": "dev-add-composer"
+    },
+
+
+Then do
+
+	composer install
+
+## Migrating from existing install.
+
+If you were previously using this library then to migrate to the new composer ready version you will need to add the "use" statements.
+
+Example:
+
+	require_once('lib/pbshipping.php');
+	
+	// These are now needed since we are now using namespaces.
+	
+	use PitenyBowes\PBShippingApi\PBShipping;
+	use PitenyBowes\PBShippingApi\PBShippingAuthentication;
+	use PitenyBowes\PBShippingApi\PBShippingCarrier;
+	use PitenyBowes\PBShippingApi\PBShippingDeveloper;
+	use PitenyBowes\PBShippingApi\PBShippingAccount;
+	use PitenyBowes\PBShippingApi\PBShippingAddress;
+	use PitenyBowes\PBShippingApi\PBShippingShipment;
+	use PitenyBowes\PBShippingApi\PBShippingTracking;
+	use PitenyBowes\PBShippingApi\PBShippingApiError;
+	use PitenyBowes\PBShippingApi\PBShippingManifest;
+
+
+
 ## Dependecies
 
 You would need to enable the cURL extension (php5-curl) available in your environment.
@@ -147,6 +188,10 @@ The Pitney Bowes Shipping Services API (REST) documentation can be found at the
 Developers are also encouraged to use the tutorial example and source code 
 comment blocks for information on the wrapper layer interface and mapping to the 
 underlying REST shipping APIs. 
+
+## Contribution
+
+[ Full Cycle ](http://fullcycle.io) add composer support. 
 
 ## Attribution Notice
 
