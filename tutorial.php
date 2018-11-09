@@ -20,6 +20,20 @@
 
 require_once('lib/pbshipping.php');
 
+
+// These are now needed since we are now using namespaces.
+
+use PitenyBowes\PBShippingApi\PBShipping;
+use PitenyBowes\PBShippingApi\PBShippingAuthentication;
+use PitenyBowes\PBShippingApi\PBShippingCarrier;
+use PitenyBowes\PBShippingApi\PBShippingDeveloper;
+use PitenyBowes\PBShippingApi\PBShippingAccount;
+use PitenyBowes\PBShippingApi\PBShippingAddress;
+use PitenyBowes\PBShippingApi\PBShippingShipment;
+use PitenyBowes\PBShippingApi\PBShippingTracking;
+use PitenyBowes\PBShippingApi\PBShippingApiError;
+use PitenyBowes\PBShippingApi\PBShippingManifest;
+
 $origin_addr = array(
     "addressLines" => array("37 Executive Drive"), 
     "cityTown" => "Danbury",
@@ -156,8 +170,8 @@ try {
 	$res = PBShippingCarrier::getCountriesForCarrier($auth_obj, "usps", "US");
 	$n = sizeof($res);
 	println("   number of supported countries is " . $n);
-	println("   one example is " . $res[n/3]["countryName"] . ':' . 
-		$res[n/3]["countryCode"]);
+	println("   one example is " . $res[$n/3]["countryName"] . ':' . 
+		$res[$n/3]["countryCode"]);
 
 	# managing merchant account under individual or bulk account mode
 	# - enable the corresponding code for your developer account
