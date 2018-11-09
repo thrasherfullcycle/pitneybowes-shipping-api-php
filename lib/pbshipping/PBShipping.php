@@ -18,6 +18,7 @@
 # Description: shipping configuration class for controlling environment 
 #              parameters, API versioning, etc. 
 # 
+namespace PitenyBowes\PBShippingApi;
 
 class PBShipping {
 

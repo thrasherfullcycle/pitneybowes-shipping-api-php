@@ -18,6 +18,7 @@
 # Description: implementation for communicating with shipping services through
 #              REST APIs
 # 
+namespace PitenyBowes\PBShippingApi;
 
 class PBShippingRequestor {
 	   
@@ -84,12 +85,11 @@ class PBShippingRequestor {
             $msg = "Invalid response body $rbody " . "HTTP status code: $rcode";
             throw new PBShippingApiError($msg, $http_status, $http_body);
         }
-        
-        if ($http_status < 200 || $http_status >= 300)
-			throw new PBShippingApiError("HTTP Status code: " . $http_status, 
+        if ($http_status < 200 || $http_status >= 300) {
+		throw new PBShippingApiError("HTTP Status code: " . $http_status, 
 				$http_status, $http_body, $json_body);
-
-		return $json_body;
+	}
+	return $json_body;
     }
     
     private static function makeCurlRequest($method, $url, $headers, $payload) {

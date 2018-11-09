@@ -17,6 +17,7 @@
 # File: manifest.php
 # Description: shipping api manifest management
 # 
+namespace PitenyBowes\PBShippingApi;
 
 class PBShippingManifest extends PBShippingApiResource {
 

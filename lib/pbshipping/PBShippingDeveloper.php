@@ -19,6 +19,7 @@
 #              managing associated merchants, and querying for transaction 
 #              history related to the developer account.
 # 
+namespace PitenyBowes\PBShippingApi;
 
 class PBShippingDeveloper extends PBShippingApiResource {
 

@@ -18,6 +18,7 @@
 # Description: shipment tracking support.
 # 
 
+namespace PitenyBowes\PBShippingApi;
 
 class PBShippingTracking extends PBShippingApiResource {
 

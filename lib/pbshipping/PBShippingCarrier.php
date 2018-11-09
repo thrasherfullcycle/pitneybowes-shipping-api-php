@@ -17,6 +17,7 @@
 # File: carrier.php
 # Description: shipping carrier support information query
 # 
+namespace PitenyBowes\PBShippingApi;
 
 class PBShippingCarrier extends PBShippingApiResource {
 

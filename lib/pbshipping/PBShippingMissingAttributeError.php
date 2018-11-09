@@ -14,13 +14,14 @@
 # See the License for the specific language governing permissions and 
 # limitations under the License.
 #
-# File: api_object.php
-# Description: base shipping api object class
+# File: error.php
+# Description: base shipping api error class
 # 
 namespace PitenyBowes\PBShippingApi;
 
-use \ArrayObject;
-
-class PBShippingApiObject extends ArrayObject {
+class PBShippingMissingAttributeError extends PBShippingApiError {
+	public function __construct($attrname) {
+		$message = "Attribute " . $attrname . "is missing";
+		parent::__construct($message);
+	}
 }
-

@@ -18,6 +18,8 @@
 # Description: class and methods for managing account
 # 
 
+namespace PitenyBowes\PBShippingApi;
+
 class PBShippingAccount extends PBShippingApiResource {
 
     #

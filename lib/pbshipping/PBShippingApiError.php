@@ -17,8 +17,9 @@
 # File: error.php
 # Description: base shipping api error class
 # 
+namespace PitenyBowes\PBShippingApi;
 
-class PBShippingApiError extends Exception {	
+class PBShippingApiError extends \Exception {	
     public function __construct($message, $http_status = null, $http_body = null, $json_body = null) {
         parent::__construct($message);
         $this->http_status = $http_status;
@@ -85,12 +86,3 @@ class PBShippingApiError extends Exception {
 	}
 }
 
-class PBShippingAuthenticationError extends PBShippingApiError {
-}
-
-class PBShippingMissingAttributeError extends PBShippingApiError {
-	public function __construct($attrname) {
-		$message = "Attribute " . $attrname . "is missing";
-		parent::__construct($message);
-	}
-}

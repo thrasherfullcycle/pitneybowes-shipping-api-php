@@ -16,6 +16,7 @@
 #
 # File: authentication.php
 # Description: class for handling authentication with shippping API service
+namespace PitenyBowes\PBShippingApi;
 
 class PBShippingAuthentication {
 

@@ -17,7 +17,7 @@
 # File: api_resource.php
 # Description: base shipping api resource class
 # 
-
+namespace PitenyBowes\PBShippingApi;
 class PBShippingApiResource extends PBShippingApiObject {
 
 } 
