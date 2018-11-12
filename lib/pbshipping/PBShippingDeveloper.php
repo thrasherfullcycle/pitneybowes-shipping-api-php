@@ -124,4 +124,18 @@ class PBShippingDeveloper extends PBShippingApiResource {
         return PBShippingRequestor::request($auth_obj, "get", 
         	$api_version, $api_path, null, $params, null);			
 	}			
+	
+	public function getMerchants(
+		$auth_obj) {
+
+		if (!isset($this["developerId"]))
+			throw new PBShippingMissingAttributeError("developerId");		
+	$api_version = PBShipping::getApiVersion( "get/developers/.../merchants/emails/...");	
+        $api_path = sprintf("/developers/%s/merchants", $this["developerId"]);
+        return PBShippingRequestor::request($auth_obj, "get", 
+        	$api_version, $api_path, null, null, null);	
+	}		
+
+    #
+    # CLIENT LIBRARY SPECIFIC
 }
