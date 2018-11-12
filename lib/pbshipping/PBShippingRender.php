@@ -59,8 +59,6 @@ class PBShippingRender extends PBShippingApiResource {
 	public function render(
 		$auth_obj, $address) {
 
-		if (!isset($this["developerId"]))
-			throw new PBShippingMissingAttributeError("developerId");		
 		$api_version = PBShipping::getApiVersion(
 			"post/payment/render/...");	
         	$api_path = sprintf("/payment/render");
