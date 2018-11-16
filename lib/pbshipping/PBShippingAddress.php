@@ -39,11 +39,13 @@ class PBShippingAddress extends PBShippingApiResource {
 		$overwrite = true) {
 		
 		$api_version = PBShipping::getApiVersion("post/addresses/verify");	
-        $api_path = "/addresses/verify";
-		if ($minimal_address_validation == null || !$minimal_address_validation) 
+		if ($minimal_address_validation == null || !$minimal_address_validation)  {
+        		$api_path = "/addresses/verify?minimalAddressValidation=true";
 			$hdrs = array("minimalAddressValidation: false");
-		else
+		} else {
+        		$api_path = "/addresses/verify";
 			$hdrs = array("minimalAddressValidation: true");
+		}
 		$json_resp = PBShippingRequestor::request($auth_obj, "post", $api_version, 
 			$api_path, $hdrs, null, $address);
 		if ($overwrite == true) {
