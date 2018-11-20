@@ -41,7 +41,7 @@ class PBShippingApiError extends \Exception {
 						}
 					}
 					else 
-						throw new Exception("unexpected error content format");
+						throw new \Exception("unexpected error content format");
 				}
 				else  {
 					foreach ($json_body as $next_error) {
@@ -60,11 +60,11 @@ class PBShippingApiError extends \Exception {
 							array_push($this->error_info, $error_entry);							
 						}
 						else 
-							throw new Exception("unexpected error content format");
+							throw new \Exception("unexpected error content format");
 					}
 				}
             }
-            catch (Exception $e) {
+            catch (\Exception $e) {
 			}
 		}
     }
