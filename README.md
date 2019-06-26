@@ -46,16 +46,16 @@ Example:
 	
 	// These are now needed since we are now using namespaces.
 	
-	use PitenyBowes\PBShippingApi\PBShipping;
-	use PitenyBowes\PBShippingApi\PBShippingAuthentication;
-	use PitenyBowes\PBShippingApi\PBShippingCarrier;
-	use PitenyBowes\PBShippingApi\PBShippingDeveloper;
-	use PitenyBowes\PBShippingApi\PBShippingAccount;
-	use PitenyBowes\PBShippingApi\PBShippingAddress;
-	use PitenyBowes\PBShippingApi\PBShippingShipment;
-	use PitenyBowes\PBShippingApi\PBShippingTracking;
-	use PitenyBowes\PBShippingApi\PBShippingApiError;
-	use PitenyBowes\PBShippingApi\PBShippingManifest;
+	use PitneyBowes\PBShippingApi\PBShipping;
+	use PitneyBowes\PBShippingApi\PBShippingAuthentication;
+	use PitneyBowes\PBShippingApi\PBShippingCarrier;
+	use PitneyBowes\PBShippingApi\PBShippingDeveloper;
+	use PitneyBowes\PBShippingApi\PBShippingAccount;
+	use PitneyBowes\PBShippingApi\PBShippingAddress;
+	use PitneyBowes\PBShippingApi\PBShippingShipment;
+	use PitneyBowes\PBShippingApi\PBShippingTracking;
+	use PitneyBowes\PBShippingApi\PBShippingApiError;
+	use PitneyBowes\PBShippingApi\PBShippingManifest;
 
 
 
