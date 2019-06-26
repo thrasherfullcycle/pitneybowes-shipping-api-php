@@ -17,7 +17,7 @@
 # File: api_object.php
 # Description: base shipping api object class
 # 
-namespace PitenyBowes\PBShippingApi;
+namespace PitneyBowes\PBShippingApi;
 
 use \ArrayObject;
 

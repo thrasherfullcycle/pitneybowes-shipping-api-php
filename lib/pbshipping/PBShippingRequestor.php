@@ -18,7 +18,7 @@
 # Description: implementation for communicating with shipping services through
 #              REST APIs
 # 
-namespace PitenyBowes\PBShippingApi;
+namespace PitneyBowes\PBShippingApi;
 
 class PBShippingRequestor {
 	   

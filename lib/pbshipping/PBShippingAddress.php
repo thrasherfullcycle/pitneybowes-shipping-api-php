@@ -17,7 +17,7 @@
 # File: address.php
 # Description: class and methods for validating mailing addresses
 # 
-namespace PitenyBowes\PBShippingApi;
+namespace PitneyBowes\PBShippingApi;
 
 class PBShippingAddress extends PBShippingApiResource {
 

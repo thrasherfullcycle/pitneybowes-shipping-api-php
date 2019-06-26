@@ -17,7 +17,7 @@
 # File: error.php
 # Description: base shipping api error class
 # 
-namespace PitenyBowes\PBShippingApi;
+namespace PitneyBowes\PBShippingApi;
 
 class PBShippingApiError extends \Exception {	
     public function __construct($message, $http_status = null, $http_body = null, $json_body = null) {

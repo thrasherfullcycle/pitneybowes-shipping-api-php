@@ -17,7 +17,7 @@
 # File: shipment.php
 # Description: class supporting shipment creation and management functions
 # 
-namespace PitenyBowes\PBShippingApi;
+namespace PitneyBowes\PBShippingApi;
 
 class PBShippingShipment extends PBShippingApiResource {
 

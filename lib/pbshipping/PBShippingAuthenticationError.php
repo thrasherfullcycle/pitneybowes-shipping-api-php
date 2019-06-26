@@ -17,7 +17,7 @@
 # File: error.php
 # Description: base shipping api error class
 # 
-namespace PitenyBowes\PBShippingApi;
+namespace PitneyBowes\PBShippingApi;
 
 
 class PBShippingAuthenticationError extends PBShippingApiError {
